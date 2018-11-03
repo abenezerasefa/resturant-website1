@@ -1,0 +1,2 @@
+# resturant-website1
+ Rucker’s in Scottsdale, Arizona, wants a web page for its restaurant. The website should allow customers to be able to view photos of the menu, pricing information, and atmosphere they can expect when they visit the restaurant. Customers should be able to make reservation online and be able to monitor visitor activity, such as how long visitors view a page and how many visitors come to the site daily. 
