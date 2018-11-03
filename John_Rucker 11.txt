@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>Rucker’s</title>
+</head>
+<body>
+<div class = "firbox">
+<h1 id = "title">Rucker’s Scottsdale </h1>
+<h2 id = "moto">"The best steak in Scottsdale!”</h2> 
+<p id = "tadd"><i>555 Mountainview Ave.<br/>Scottsdale, AZ 85260<br/>(602) 789-5672</i><br/></p>
+</div>
+<div id = "menu">
+<ul class = "menulis">
+<li id = "specal"> <a href = "specials.html">Specials </a><hr/></li>
+<li id = "wine"> <a href = "wine_beer.html">Wine & Beer </a><hr/></li>
+<li id = "desert"><a href = "Dessert.html"> Dessert</a> <hr/></li>
+<li id= "order"> <a href = "order3.html">Order</a><hr/></li>
+<li id ="us"> <a href = "aboutus.html">About Us</a><hr/></li>
+</ul>
+</div>
+<div class = "phnum">
+<p id = "phone">Call Us: (602) 789-5672</p>
+</div>
+<div id = "secbox">
+<p class = "greet">Welcome to Rucker’s, which has been voted Best Steakhouse in Scottsdale four
+years running! At Rucker’s you can enjoy a quality steak, amazing wine, and a quiet
+atmosphere in a mountain-themed restaurant. Rucker’s has been a tradition in
+Scottsdale since 1975 and is an amazing place to dine.</p> 
+</div>
+<div id= "resrv">
+<p class ="topic"> Resrvation </p>
+<p id = "note"> On Sunday's we are open from 12pm-8pm </p>
+<form action = "http://www.google.com" method = "post">
+<div class = "resvox">
+<lable> 
+Reservation Name
+<input id = "custnm" type = "text" name = "custnam" placeholder = "your name"> </lable></input>
+<ul id = "seclis">
+<li><lable>
+Date: 
+<input id = "rvdate" type = "date" name = "datrv"></lable> </input></li>  
+<li>
+<lable>
+time:
+<select id = "rvtime" name = "timerv">
+<option value = "11am-12am" selected = "selected"> 11am-12am </option>
+<option value = "12am-1am"> 12am-1am </option>
+<option value = "1am-2am"> 1am-2am </option>
+<option value = "2am-3am"> 2am-3am </option>
+<option value = "3am-4am"> 3am-4am </option>
+<option value = "4am-5am"> 4am-5am </option>
+<option value = "5am-6pm"> 5am-6pm </option>
+<option value = "6pm-7pm"> 6pm-7pm </option>
+<option value = "7pm-8pm"> 7pm-8pm </option>
+<option value = "8pm-9pm"> 8pm-9pm </option>
+<option value = "9pm-10pm"> 9pm-10pm </option>
+</select></lable></li>
+</ul>
+<input id = "but" type = "submit" name = "revbut" value = "Reserve"><a href = "http://www.google.com"> </a></input>
+</form>
+</div>
+</div>
+<div id = "contem">
+<p class = "email"> Contact US @ : <a href = "mailto:staff@ruckers.com">staff@ruckers.com</a></p>
+</div>
+<script type = "text/javascript">
+var date = newdate();
+var day = date.getday();
+var val = document.getElementById("rvdate").value;
+function checkdate(){
+    if(val = day[6])
+        window.alert("we are only open 12pm - 8pm on sundays");
+    else 
+        "" ;}
+  val.addeventhandler(click, checkdate(), false);
+
+   </script>
+
+</script>
+<style type = "text/CSS">
+	body
+	{background-image: url("images/background3.jpeg");
+	}
+	div.firbox
+	{
+		position : absolute;
+		top : 0px;
+	}
+	h1#title
+	{
+	font-family : helvetica ;
+	font-size : 52px;
+	font-style : italic;
+	color: #B32F04;
+	margin-left : 380px;
+	margin-bottom : 4px;
+	}
+	h2#moto
+	{
+		font-family : monotype corsiva;
+		font-size: 38px;
+		color : #B04D2C;
+		margin-left :420px;
+		margin-top : 9px;
+		margin-bottom : 10px;
+	}
+	p#tadd
+	{
+		font-family : courier;
+		font-size : 16px;
+		font-weight : bold;
+		color : #B04D2C;
+		margin-left : 550px;
+		margin-top: 11px;
+	}
+	a:link
+	{
+		text-decoration: none;
+	}
+	a:hover
+	{
+		color : #4ee51b ;
+	}
+	a:active
+	{
+		color : #ff111d;
+	}
+	
+	div.phnum
+	{
+		position : absolute;
+		top : 9px;
+		left : 1080px;
+	}
+	p#phone
+	{
+		font-family : monotype corsiva;
+		font-size : 16px;
+		font-weight : bold;
+	}
+	div#menu
+	{
+		position : absolute;
+		left : 0px;
+		top : 200px;
+		width : 150px;
+	}
+	div#secbox
+	{
+		position : absolute;
+		top : 220px;
+		left : 250px;
+	}
+	p.greet
+	{
+		font-family : monotype corsiva;
+		font-size : 28px;
+		color : #D4191D;
+		font-weight: bold;
+	}
+	div#resrv
+	{
+		position : absolute;
+		top :330px ;
+		left :250px;
+	}
+	p.topic
+	{
+		font-family : comic sans MS;
+		color : #ED077A;
+		font-size : 32px;
+		font-style : oblique;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-left : 480px;
+	}
+	p#note
+	{
+		font-family : courier;
+		font-size : 18px;
+		font-weight: bold;
+		color : #C70063;
+		margin-left : 482px;
+	}
+	div.resvox
+	{
+		font-family : monotype corsiva;
+		color : #D4191D;
+		font-size : 28px;
+		font-weight: bold;
+		margin-left : 480px;
+		margin-top : 10px;
+	}
+	ul#seclis>li
+	{
+		display : inline;
+		list-style-type : none;
+		margin-left : 0px;
+	}
+	
+	input#but
+	{
+		border-radius: 5px;
+		height : 30px;
+		width : 95px;
+		font-family : courier;
+		font-size : 16px;
+		color : #ffffff;
+		background-color : #E3098F;
+		margin-left : 340px;
+		margin-top: 2px;
+	}
+	div#contem
+	{
+		position : absolute;
+		top : 680px;
+		left : 1000px;
+	}
+	p.email
+	{
+		font-family: helvetica;
+		font-size : 16px;
+		color : #D4191D;
+	}
+
+</style>
+</body>
+</html>
